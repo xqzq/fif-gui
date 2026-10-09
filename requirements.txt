@@ -1,0 +1,19 @@
+# 补丁版依赖 —— 已在 Python 3.12.10 / Windows 实测通过
+#
+# 关键修正（相对上游 requirements.txt）：
+#   coqui-tts 0.24.1 -> 0.24.3   0.24.1 无 cp312 轮子，源码编译 core.pyx 失败
+#   TTS 0.22.0 移除              旧包，已由 coqui-tts 取代，且无可用轮子
+#   numpy 1.24.3 -> <2           1.24.3 无 cp312 轮子（最低 1.26.0）
+#   新增 transformers==4.46.3    >=4.52 移除了 LogitsWarper，coqui-tts 导入失败
+#   pyaudio 0.2.13 -> 0.2.14     0.2.13 无 cp312 轮子
+#
+# PyTorch 不在此文件内，按显卡情况单独安装，见 README。
+
+coqui-tts==0.24.3
+transformers==4.46.3
+numpy<2
+pyaudio>=0.2.14
+playwright==1.41.1
+soundfile
+tqdm
+num2words==0.5.14

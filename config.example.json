@@ -1,0 +1,17 @@
+{
+  "username": "",
+  "password": "",
+  "skip_score": 80,
+  "target_voice_path": "draft/target_voice.wav",
+  "tts_model": "tts_models/multilingual/multi-dataset/your_tts",
+  "tts_mode": "cpu",
+  "vmic_name": "VirtualPipeMic",
+  "output_device": "CABLE Input",
+  "bank_type": "1",
+  "headless": false,
+  "dry_run": true,
+  "resume": true,
+  "max_retries": 2,
+  "skip_rules": [],
+  "level_type_rules": []
+}

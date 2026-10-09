@@ -137,6 +137,3 @@ setup.ps1         CPU 环境安装入口
 run.bat           Windows 启动入口
 ```
 
-## 发布到 GitHub
-
-详见 [PUBLISHING.md](PUBLISHING.md)。请先以预发布/实验性版本发布，并保留上述验证边界。

@@ -1,0 +1,41 @@
+# Local configuration and credentials
+config.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*storage_state*.json
+*auth_state*.json
+# Python / tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+# Runtime data and audio
+_runtime/
+draft/
+state/
+logs/
+tmp/
+*.wav
+*.mp3
+*.pth
+*.onnx
+*.log
+*.zip
+*.exe
+*.msi
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
